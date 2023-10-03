@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8DF07D92A947E70003F65BC /* ZombieSurvivorECSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07D82A947E70003F65BC /* ZombieSurvivorECSApp.swift */; };
+		F8DF07DB2A947E70003F65BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07DA2A947E70003F65BC /* ContentView.swift */; };
+		F8DF07DD2A947E71003F65BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DF07DC2A947E71003F65BC /* Assets.xcassets */; };
+		F8DF07E02A947E71003F65BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DF07DF2A947E71003F65BC /* Preview Assets.xcassets */; };
+		F8DF07E92A947EDC003F65BC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07E82A947EDC003F65BC /* GameScene.swift */; };
+		F8DF07ED2A94A3E9003F65BC /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07EC2A94A3E9003F65BC /* SpriteComponent.swift */; };
+		F8DF07EF2A94A494003F65BC /* SpriteShapeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07EE2A94A494003F65BC /* SpriteShapeComponent.swift */; };
+		F8DF07F12A94A524003F65BC /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07F02A94A524003F65BC /* PlayerEntity.swift */; };
+		F8DF07F32A94A64F003F65BC /* Instruction.md in Resources */ = {isa = PBXBuildFile; fileRef = F8DF07F22A94A64F003F65BC /* Instruction.md */; };
+		F8DF07F62A94A6C1003F65BC /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07F52A94A6C1003F65BC /* EntityManager.swift */; };
+		F8DF07F82A94B295003F65BC /* TimerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07F72A94B295003F65BC /* TimerComponent.swift */; };
+		F8DF07FC2A94B3C1003F65BC /* TimerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07FB2A94B3C1003F65BC /* TimerEntity.swift */; };
+		F8DF07FE2A94CA46003F65BC /* EnemyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07FD2A94CA46003F65BC /* EnemyEntity.swift */; };
+		F8DF08002A95A0D9003F65BC /* SpawnerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF07FF2A95A0D9003F65BC /* SpawnerComponent.swift */; };
+		F8DF08022A95A263003F65BC /* SpawnerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08012A95A263003F65BC /* SpawnerEntity.swift */; };
+		F8DF08052A95A9BB003F65BC /* MoveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08042A95A9BB003F65BC /* MoveBehavior.swift */; };
+		F8DF08072A95ABF2003F65BC /* EnemyMoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08062A95ABF2003F65BC /* EnemyMoveComponent.swift */; };
+		F8DF080A2A95B09F003F65BC /* PlayerMoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08092A95B09F003F65BC /* PlayerMoveComponent.swift */; };
+		F8DF080C2A960021003F65BC /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF080B2A960021003F65BC /* CGPoint+Extension.swift */; };
+		F8DF080E2A960093003F65BC /* Vector2+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF080D2A960093003F65BC /* Vector2+Extension.swift */; };
+		F8DF08102A970189003F65BC /* PlayerAttackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF080F2A970189003F65BC /* PlayerAttackComponent.swift */; };
+		F8DF08122A97079F003F65BC /* ColliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08112A97079E003F65BC /* ColliderComponent.swift */; };
+		F8DF08162A974B9D003F65BC /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08152A974B9D003F65BC /* HealthComponent.swift */; };
+		F8DF08182A975C29003F65BC /* AttackAnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF08172A975C29003F65BC /* AttackAnimationComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8DF07D52A947E70003F65BC /* ZombieSurvivorECS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieSurvivorECS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DF07D82A947E70003F65BC /* ZombieSurvivorECSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieSurvivorECSApp.swift; sourceTree = "<group>"; };
+		F8DF07DA2A947E70003F65BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8DF07DC2A947E71003F65BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8DF07DF2A947E71003F65BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8DF07E82A947EDC003F65BC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F8DF07EC2A94A3E9003F65BC /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		F8DF07EE2A94A494003F65BC /* SpriteShapeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteShapeComponent.swift; sourceTree = "<group>"; };
+		F8DF07F02A94A524003F65BC /* PlayerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
+		F8DF07F22A94A64F003F65BC /* Instruction.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Instruction.md; sourceTree = "<group>"; };
+		F8DF07F52A94A6C1003F65BC /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		F8DF07F72A94B295003F65BC /* TimerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerComponent.swift; sourceTree = "<group>"; };
+		F8DF07FB2A94B3C1003F65BC /* TimerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEntity.swift; sourceTree = "<group>"; };
+		F8DF07FD2A94CA46003F65BC /* EnemyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyEntity.swift; sourceTree = "<group>"; };
+		F8DF07FF2A95A0D9003F65BC /* SpawnerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnerComponent.swift; sourceTree = "<group>"; };
+		F8DF08012A95A263003F65BC /* SpawnerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnerEntity.swift; sourceTree = "<group>"; };
+		F8DF08042A95A9BB003F65BC /* MoveBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveBehavior.swift; sourceTree = "<group>"; };
+		F8DF08062A95ABF2003F65BC /* EnemyMoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyMoveComponent.swift; sourceTree = "<group>"; };
+		F8DF08092A95B09F003F65BC /* PlayerMoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMoveComponent.swift; sourceTree = "<group>"; };
+		F8DF080B2A960021003F65BC /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		F8DF080D2A960093003F65BC /* Vector2+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vector2+Extension.swift"; sourceTree = "<group>"; };
+		F8DF080F2A970189003F65BC /* PlayerAttackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAttackComponent.swift; sourceTree = "<group>"; };
+		F8DF08112A97079E003F65BC /* ColliderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderComponent.swift; sourceTree = "<group>"; };
+		F8DF08152A974B9D003F65BC /* HealthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
+		F8DF08172A975C29003F65BC /* AttackAnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackAnimationComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8DF07D22A947E70003F65BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8DF07CC2A947E70003F65BC = {
+			isa = PBXGroup;
+			children = (
+				F8DF07D72A947E70003F65BC /* ZombieSurvivorECS */,
+				F8DF07D62A947E70003F65BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8DF07D62A947E70003F65BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07D52A947E70003F65BC /* ZombieSurvivorECS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8DF07D72A947E70003F65BC /* ZombieSurvivorECS */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07D82A947E70003F65BC /* ZombieSurvivorECSApp.swift */,
+				F8DF07DA2A947E70003F65BC /* ContentView.swift */,
+				F8DF07E82A947EDC003F65BC /* GameScene.swift */,
+				F8DF08032A95A9A7003F65BC /* Behavior */,
+				F8DF07F42A94A6B4003F65BC /* Helper */,
+				F8DF07EB2A94A282003F65BC /* Component */,
+				F8DF07EA2A94A272003F65BC /* Entity */,
+				F8DF07DC2A947E71003F65BC /* Assets.xcassets */,
+				F8DF07DE2A947E71003F65BC /* Preview Content */,
+				F8DF07F22A94A64F003F65BC /* Instruction.md */,
+			);
+			path = ZombieSurvivorECS;
+			sourceTree = "<group>";
+		};
+		F8DF07DE2A947E71003F65BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07DF2A947E71003F65BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8DF07EA2A94A272003F65BC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07F02A94A524003F65BC /* PlayerEntity.swift */,
+				F8DF07FD2A94CA46003F65BC /* EnemyEntity.swift */,
+				F8DF08012A95A263003F65BC /* SpawnerEntity.swift */,
+				F8DF07FB2A94B3C1003F65BC /* TimerEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F8DF07EB2A94A282003F65BC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07EC2A94A3E9003F65BC /* SpriteComponent.swift */,
+				F8DF07EE2A94A494003F65BC /* SpriteShapeComponent.swift */,
+				F8DF07F72A94B295003F65BC /* TimerComponent.swift */,
+				F8DF07FF2A95A0D9003F65BC /* SpawnerComponent.swift */,
+				F8DF08062A95ABF2003F65BC /* EnemyMoveComponent.swift */,
+				F8DF08092A95B09F003F65BC /* PlayerMoveComponent.swift */,
+				F8DF080F2A970189003F65BC /* PlayerAttackComponent.swift */,
+				F8DF08172A975C29003F65BC /* AttackAnimationComponent.swift */,
+				F8DF08112A97079E003F65BC /* ColliderComponent.swift */,
+				F8DF08152A974B9D003F65BC /* HealthComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F8DF07F42A94A6B4003F65BC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF07F52A94A6C1003F65BC /* EntityManager.swift */,
+				F8DF080B2A960021003F65BC /* CGPoint+Extension.swift */,
+				F8DF080D2A960093003F65BC /* Vector2+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F8DF08032A95A9A7003F65BC /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF08042A95A9BB003F65BC /* MoveBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8DF07D42A947E70003F65BC /* ZombieSurvivorECS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DF07E32A947E71003F65BC /* Build configuration list for PBXNativeTarget "ZombieSurvivorECS" */;
+			buildPhases = (
+				F8DF07D12A947E70003F65BC /* Sources */,
+				F8DF07D22A947E70003F65BC /* Frameworks */,
+				F8DF07D32A947E70003F65BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieSurvivorECS;
+			productName = ZombieSurvivorECS;
+			productReference = F8DF07D52A947E70003F65BC /* ZombieSurvivorECS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8DF07CD2A947E70003F65BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F8DF07D42A947E70003F65BC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F8DF07D02A947E70003F65BC /* Build configuration list for PBXProject "ZombieSurvivorECS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8DF07CC2A947E70003F65BC;
+			productRefGroup = F8DF07D62A947E70003F65BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8DF07D42A947E70003F65BC /* ZombieSurvivorECS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8DF07D32A947E70003F65BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DF07E02A947E71003F65BC /* Preview Assets.xcassets in Resources */,
+				F8DF07F32A94A64F003F65BC /* Instruction.md in Resources */,
+				F8DF07DD2A947E71003F65BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8DF07D12A947E70003F65BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DF08072A95ABF2003F65BC /* EnemyMoveComponent.swift in Sources */,
+				F8DF07E92A947EDC003F65BC /* GameScene.swift in Sources */,
+				F8DF080A2A95B09F003F65BC /* PlayerMoveComponent.swift in Sources */,
+				F8DF080E2A960093003F65BC /* Vector2+Extension.swift in Sources */,
+				F8DF07FE2A94CA46003F65BC /* EnemyEntity.swift in Sources */,
+				F8DF07F62A94A6C1003F65BC /* EntityManager.swift in Sources */,
+				F8DF08102A970189003F65BC /* PlayerAttackComponent.swift in Sources */,
+				F8DF08052A95A9BB003F65BC /* MoveBehavior.swift in Sources */,
+				F8DF07DB2A947E70003F65BC /* ContentView.swift in Sources */,
+				F8DF07F82A94B295003F65BC /* TimerComponent.swift in Sources */,
+				F8DF07EF2A94A494003F65BC /* SpriteShapeComponent.swift in Sources */,
+				F8DF07F12A94A524003F65BC /* PlayerEntity.swift in Sources */,
+				F8DF08162A974B9D003F65BC /* HealthComponent.swift in Sources */,
+				F8DF07ED2A94A3E9003F65BC /* SpriteComponent.swift in Sources */,
+				F8DF07FC2A94B3C1003F65BC /* TimerEntity.swift in Sources */,
+				F8DF08002A95A0D9003F65BC /* SpawnerComponent.swift in Sources */,
+				F8DF07D92A947E70003F65BC /* ZombieSurvivorECSApp.swift in Sources */,
+				F8DF08122A97079F003F65BC /* ColliderComponent.swift in Sources */,
+				F8DF08022A95A263003F65BC /* SpawnerEntity.swift in Sources */,
+				F8DF08182A975C29003F65BC /* AttackAnimationComponent.swift in Sources */,
+				F8DF080C2A960021003F65BC /* CGPoint+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F8DF07E12A947E71003F65BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8DF07E22A947E71003F65BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8DF07E42A947E71003F65BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZombieSurvivorECS/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.ZombieSurvivorECS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8DF07E52A947E71003F65BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZombieSurvivorECS/Preview Content\"";
+				DEVELOPMENT_TEAM = W84329STPY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.athoya.ZombieSurvivorECS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8DF07D02A947E70003F65BC /* Build configuration list for PBXProject "ZombieSurvivorECS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DF07E12A947E71003F65BC /* Debug */,
+				F8DF07E22A947E71003F65BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DF07E32A947E71003F65BC /* Build configuration list for PBXNativeTarget "ZombieSurvivorECS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DF07E42A947E71003F65BC /* Debug */,
+				F8DF07E52A947E71003F65BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8DF07CD2A947E70003F65BC /* Project object */;
+}
